@@ -1,6 +1,6 @@
 """3D wide-angle PE propagator: Strang symmetric split-step Fourier (SSFT).
 
-Equation (REBUILD_SPEC.md §3-5):
+Governing equation:
     u_x = i/(2 k0) grad_perp^2 u + i k0 (n^2 - 1)/2 u
 after the outgoing factorization of Helmholtz, with wide-angle spectral
 multiplier exp[i k0 (R(q) - 1) dx], q = k_perp^2/k0^2, R in {exact sqrt(1-q),

@@ -1,6 +1,6 @@
 """Bench 6: fine-grid wide-angle operator accuracy at 0-30 deg+.
 
-Per Nyquist (REBUILD_SPEC.md §7): +/-30 deg needs dz <= lambda.  At f=1 GHz,
+Per Nyquist, +/-30 deg needs dz <= lambda.  At f=1 GHz,
 dz = 0.30 m (=lambda), z domain +-128 m -> 854 points.  We launch a known
 angular spectrum (a comb of plane waves at theta = 0,3,...,33 deg), propagate
 with each diffraction operator, and compare the per-angle spectrum at x=R

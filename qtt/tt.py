@@ -9,7 +9,7 @@ compressing only a 16 x r coefficient block while leaving the spatial matrix
 untouched cannot recur here, because every virtual factor is a TT core that gets
 rank-truncated.
 
-Conventions (REBUILD_SPEC.md sec.9):
+Conventions:
   * complex128 values are phase-resolving; a complex number counts as ONE
     complex scalar = TWO real float64.  Both counters are reported; the ratio
     CR comes out identical either way because the factor 2 appears on both sides.

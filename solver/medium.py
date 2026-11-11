@@ -1,6 +1,6 @@
 """Refractivity medium: modified refractivity M profile -> index n(x,y,z).
 
-Convention (REBUILD_SPEC.md §2, sympy-verified):
+Convention (sympy-verified):
     N = (n - 1) * 1e6
     M = N + (z / R_EARTH) * 1e6
 =>  n = 1 + [ M - (z / R_EARTH) * 1e6 ] * 1e-6

@@ -6,8 +6,8 @@ In spectral space grad_perp^2 -> -k_perp^2, so (after the refractivity half-step
 the diffraction multiplier is  exp[i k0 ( R(q) - 1 ) dx]  with  q = k_perp^2/k0^2 >= 0.
 
 The reference function is sqrt(1 - q) (exact spectral operator).  The Padé
-approximations are originally derived for sqrt(1+x) (sympy-verified, see
-docs/formula_verification.txt) and evaluated at x = -q:
+approximations are originally derived for sqrt(1+x) (sympy-verified) and
+evaluated at x = -q:
 
     strict Padé[2/2] of sqrt(1+x):  R22(x) = (5x^2 + 20x + 16)/(x^2 + 12x + 16),  O(x^5)
     strict Padé[2/1] of sqrt(1+x):  R21(x) = (x^2 + 8x + 8)/(4 (x + 2)),          O(x^4)

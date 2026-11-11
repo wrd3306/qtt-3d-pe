@@ -1,4 +1,4 @@
-"""Physical constants (SI). Single source of truth per REBUILD_SPEC.md §2."""
+"""Physical constants (SI)."""
 import numpy as np
 
 # Exact vacuum speed of light (m/s), 1983 definition.

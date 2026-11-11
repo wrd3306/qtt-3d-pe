@@ -4,7 +4,7 @@ for the external baselines.
 Deterministic training/test complex fields are produced by the *trusted* PE3D
 solver (exact spectral diffraction operator sqrt(1-q), complex128, phase kept),
 using exactly the same grid / atmosphere / aperture / boundary that the QTT
-compression study uses (REBUILD_SPEC.md section 2, 9, 10):
+compression study uses:
 
     f in [0.5, 3.0] GHz, Nf = 16 training
     Ny = 64, dy = 5 m ; Nz = 128, dz = 2 m
@@ -13,8 +13,8 @@ compression study uses (REBUILD_SPEC.md section 2, 9, 10):
     source at y=0, z=30 m, physical Gaussian aperture (sigma_y=5 m, sigma_z=3 m)
     absorbing sponge on top and y sides.
 
-Coarse-grid Nyquist effective angle band (REBUILD_SPEC section 7, must be stated,
-no wide-angle claim): with dz=2 m, sin(theta_max)=lambda/(2 dz) gives
+Coarse-grid Nyquist effective angle band (must be stated, no wide-angle claim):
+with dz=2 m, sin(theta_max)=lambda/(2 dz) gives
     1 GHz -> 4.30 deg ,  3 GHz -> 1.43 deg.
 """
 from __future__ import annotations
@@ -61,7 +61,7 @@ def generate_frequency_set():
 
 
 def nyquist_angle_deg(f_GHz):
-    """Effective narrow-angle band of the coarse dz=2 m grid (REBUILD_SPEC 7)."""
+    """Effective narrow-angle band of the coarse dz=2 m grid."""
     lam = C_LIGHT / (f_GHz * 1.0e9)
     return float(np.degrees(np.arcsin(lam / (2.0 * BASELINE_CONFIG["dz_m"]))))
 
@@ -102,8 +102,8 @@ def make_valid_mask(y, z):
     """Effective-region mask (Ny, Nz) bool.
 
     Excludes: the PEC ground row z=0, the top sponge band, and the y-side sponge
-    bands.  Used for the complex relative-error norm.  (REBUILD_SPEC section 10:
-    interference nulls and absorbing layers are excluded.)
+    bands.  Used for the complex relative-error norm (interference nulls and
+    absorbing layers are excluded).
     """
     c = BASELINE_CONFIG
     yy = y[None, :]              # (1, Ny)

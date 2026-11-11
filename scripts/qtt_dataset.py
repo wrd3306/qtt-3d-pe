@@ -9,7 +9,7 @@
 
 4-D tensor U[f, z0, y, z]: same + source-height parameter z0 in {20,30,40,50} m.
 
-NOTE (REBUILD_SPEC sec.7): this coarse grid has a NARROW effective angular band
+NOTE: this coarse grid has a NARROW effective angular band
 because dz = 2 m: sin(theta_max) = lambda/(2 dz)  ->  1 GHz: 4.30 deg,
 3 GHz: 1.43 deg.  This is a near-axis compression study, NOT a wide-angle claim.
 

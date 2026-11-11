@@ -1,0 +1,38 @@
+{
+  "setup": {
+    "f_GHz": 1.0,
+    "lambda_m": 0.299792458,
+    "k0": 20.958450219516816,
+    "dx_m": 1.0,
+    "dy_m": 0.5,
+    "dz_m": 0.25,
+    "Ny": 128,
+    "Nz": 512,
+    "y_max_m": 32.0,
+    "sigma_y": 3.0,
+    "sigma_z": 3.0,
+    "x_end_m": 300.0,
+    "analytic_ref": "u_exact = Gy(y-y0;x)*Gz(z-z0;x), G_q(eta;x)=sigma/sqrt(sigma^2+i x/k0)*exp(-eta^2/(2(sigma^2+i x/k0)))",
+    "interior_window": {
+      "y_half": 12.0,
+      "z_half_free": 25.0,
+      "z_lo": 2.0,
+      "z_hi": 60.0
+    }
+  },
+  "free_space": {
+    "rel_l2_narrow": 6.442482731692344e-06,
+    "rel_l2_exact": 0.00022958180486651588,
+    "note": "narrow operator solves the separable equation exactly; residual is FFT/sponge/finite-domain error.  exact adds wide-angle error."
+  },
+  "pec_mirror": {
+    "source_z": 10.0,
+    "sigma_z": 1.5,
+    "rel_l2_interior": 6.442482729305089e-06,
+    "max_abs_u_at_ground": 0.0,
+    "expected_ground": 0.0,
+    "analytic_ref": "u = Gy(y;x)*(Gz(z-zs;x) - Gz(z+zs;x))  (Dirichlet image)"
+  },
+  "runtime_s": 3.8020951747894287,
+  "pass": true
+}

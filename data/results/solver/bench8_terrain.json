@@ -1,0 +1,57 @@
+{
+  "setup": {
+    "f_GHz": 1.0,
+    "lambda_m": 0.299792458,
+    "k0": 20.958450219516816,
+    "hill": {
+      "H": 1.5,
+      "x0": 150.0,
+      "sigma_x": 100.0
+    },
+    "source_z": 15.0,
+    "sigma_z": 1.5,
+    "x_end_hill": 250.0,
+    "reference": "finest rung dx=0.25 dz=0.05; no analytic closed form"
+  },
+  "hill_convergence": {
+    "dx_ladder_m": [
+      2.0,
+      1.0,
+      0.5
+    ],
+    "rel_l2_vs_fine": [
+      2.3694188589238765,
+      1.402226802415937,
+      0.492089842944792
+    ],
+    "dz_ladder_m": [
+      0.4,
+      0.2,
+      0.1
+    ],
+    "rel_l2_dz_vs_fine": [
+      4.546447970105427,
+      0.05737841706520934,
+      0.018680444110550976
+    ],
+    "loglog_slope_dx": 1.1337698064018868,
+    "loglog_slope_dz": 3.963533639092506,
+    "note": "self-convergence ladder; monotone decay with refinement is the independent numerical evidence (no hard-coded target)."
+  },
+  "slope_plane": {
+    "s_zero_rel_l2_vs_flat_analytic": 4.3769302142408587e-05,
+    "refraction_factor_max_abs_err": 4.965068306494546e-16,
+    "measured_slope": 0.02,
+    "drift": {
+      "s": 0.001,
+      "x_end": 51.0,
+      "z0": 15.0,
+      "centroid_measured": 13.699500000067014,
+      "centroid_predicted": 13.6995,
+      "abs_err": 6.701306176637445e-11,
+      "theory": "<z>(x)=z0-(s/2)x^2 (Ehrenfest, V=k0 s zeta)"
+    }
+  },
+  "runtime_s": 5.082525253295898,
+  "pass": true
+}

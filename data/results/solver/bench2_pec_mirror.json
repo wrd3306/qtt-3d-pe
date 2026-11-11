@@ -1,0 +1,29 @@
+{
+  "setup": {
+    "f_GHz": 1.0,
+    "dx": 1.0,
+    "dy": 2.0,
+    "dz": 0.25,
+    "Ny": 32,
+    "Nz": 512,
+    "sigma_z": 1.5,
+    "source_height": 10.0,
+    "x_end": 400.0,
+    "lambda_m": 0.299792458,
+    "k0": 20.958450219516816,
+    "nyquist_angle_deg": 36.84017522481706
+  },
+  "horizontal": {
+    "rel_l2_interior": 0.002841809639541884,
+    "value_at_ground": 0.0,
+    "expected_ground": 0.0,
+    "pass": true
+  },
+  "vertical": {
+    "rel_l2_interior": 0.0029623055696383397,
+    "value_at_ground": 0.5045053161044729,
+    "expected_ground": null,
+    "pass": true
+  },
+  "pass": true
+}

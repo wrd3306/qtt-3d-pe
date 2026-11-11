@@ -11,9 +11,9 @@ field, and failures are reported with their physical cause rather than
 hidden.
 
 > **Repository.** The public source code is hosted on GitHub at
-> [https://github.com/wrd3306/qtt-3d-pe](https://github.com/wrd3306/qtt-3d-pe).
-> A permanent, immutable archive DOI is issued via Zenodo for each released
-> version and recorded in the manuscript Data Availability statement.
+> [https://github.com/wrd3306/qtt-3d-pe](https://github.com/wrd3306/qtt-3d-pe)
+> and is archived on Zenodo (version v1.0.0) under the persistent DOI
+> [10.5281/zenodo.24140022](https://doi.org/10.5281/zenodo.24140022).
 
 ## 1. Repository layout
 
@@ -185,5 +185,12 @@ This release is provided under the MIT License (see `LICENSE`).
 
 ## 8. Citing
 
-If you use this code, cite the associated manuscript. The bibliographic entry
-and DOI are added here after publication.
+If you use this code, cite the associated manuscript. The archived software
+(version v1.0.0) can be cited as:
+
+> R. Wang, M. Wang, Y. Ma, and R. Zhang, "qtt-3d-pe: Reproducible code for a
+> systematic assessment of quantics tensor-train compression for 3-D
+> parabolic-equation propagation fields," Zenodo, 2026,
+> DOI: 10.5281/zenodo.24140022.
+
+The full bibliographic entry for the manuscript is added after publication.

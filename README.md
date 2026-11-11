@@ -10,10 +10,10 @@ hard-coded, no fitted or interpolated surrogate stands in for a computed
 field, and failures are reported with their physical cause rather than
 hidden.
 
-> **Repository URL (placeholder).** Before publishing, replace the placeholder
-> `https://<PUBLIC-REPOSITORY-URL-TO-BE-INSERTED>` in this file and in the
-> manuscript Data Availability statement with the real GitHub or Zenodo
-> address. No real account or URL has been registered on the author's behalf.
+> **Repository.** The public source code is hosted on GitHub at
+> [https://github.com/wrd3306/qtt-3d-pe](https://github.com/wrd3306/qtt-3d-pe).
+> A permanent, immutable archive DOI is issued via Zenodo for each released
+> version and recorded in the manuscript Data Availability statement.
 
 ## 1. Repository layout
 
